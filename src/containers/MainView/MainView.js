@@ -14,7 +14,7 @@ var hours = myDate.getHours();
 const portfolioLinks = [
   {
     name: 'Github',
-    link: 'shorturl.at/ouLU0'
+    link: 'shorturl.at/cCGIZ'
   },
   {
     name: 'LinkedIn',
