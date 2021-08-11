@@ -25,8 +25,7 @@ export const styles = () => {
           flexWrap: 'wrap',
           overflow: 'hidden',
           '& .portfolioLinks': {
-            textAlign: 'center',
-            margin:'20px 0px',
+            margin: '20px 0px',
             '& .links': {
               opacity: 0,
               '&:not(:last-child)': {
@@ -37,7 +36,10 @@ export const styles = () => {
                 fontSize: 'clamp(17px, 1.4vw, 40px)',
               },
               '& a': {
-                color: 'inherit'
+                color: 'inherit',
+                fontSize: 'clamp(20px, 1.9vw, 80px)',
+                textDecoration: 'none',
+                fontWeight: 600,
               }
             }
           },

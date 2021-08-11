@@ -14,15 +14,15 @@ var hours = myDate.getHours();
 const portfolioLinks = [
   {
     name: 'Github',
-    link: 'shorturl.at/cCGIZ'
+    link: 'www.github.com/aahadaazar'
   },
   {
     name: 'LinkedIn',
-    link: 'shorturl.at/nsLZ6'
+    link: 'www.linkedin.com/in/aahad-aazar-b83b77197'
   },
   {
     name: 'Instagram',
-    link: 'shorturl.at/aqMQS'
+    link: 'www.instagram.com/abdulaahadaazar'
   }
 ]
 
@@ -61,9 +61,8 @@ function MainView({ classes }) {
           {portfolioLinks.map(o => {
             return <div className={'links'} key={o.name}>
               <p>
-                {o.name}{': '}
                 <a rel="noreferrer" target="_blank" href={`https://${o.link}`}>
-                  {o.link}
+                  {o.name}
                 </a>
               </p>
             </div>
