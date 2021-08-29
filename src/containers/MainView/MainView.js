@@ -26,7 +26,7 @@ const portfolioLinks = [
   }
 ]
 
-function MainView({ classes }) {
+function MainView({ classes, repo }) {
   const [theme, setTheme] = useState('day');
 
   useEffect(() => {
@@ -57,6 +57,32 @@ function MainView({ classes }) {
       <SubHeader theme={theme} />
       <div className={'lowerContainer'}>
         <Skills theme={theme} />
+        <div className={'projects links'}>
+          <p
+            style={{
+              margin: 0,
+              fontWeight: 600
+            }}
+          >{'Projects'}</p>
+          {
+            repo.map(o => {
+              return (
+                <p key={o.id}>
+                  <a
+                    style={{
+                      color: 'inherit',
+                      marginBottom: 10,
+                      fontWeight: 600,
+                      textDecoration: 'none',
+                    }}
+                    target='_blank' rel='noreferrer' href={`https://github.com/${o.full_name}`}>
+                    {o.name}
+                  </a>
+                </p>
+              );
+            })
+          }
+        </div>
         <div className={'portfolioLinks'}>
           {portfolioLinks.map(o => {
             return <div className={'links'} key={o.name}>

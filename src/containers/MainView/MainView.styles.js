@@ -43,7 +43,11 @@ export const styles = () => {
               }
             }
           },
-        }
+          '& .projects': {
+            fontSize: 'clamp(20px, 1.9vw, 80px);',
+            margin: '20px 0px',
+          },
+        },
       },
       day: {
         // background: 'linear-gradient(90deg, rgba(80,167,194,1) 32%, rgba(183,248,219,1) 100%)',
@@ -51,7 +55,7 @@ export const styles = () => {
         background: '#dddddd',
         transition: 'background-color 400ms linear',
         '& .links': {
-          color: '#393939',
+          color: '#393939 !important',
         }
       },
       night: {
@@ -59,7 +63,7 @@ export const styles = () => {
         background: '#393939',
         transition: 'background-color 400ms linear',
         '& .links': {
-          color: '#dddddd',
+          color: '#dddddd !important',
         }
       }
     }
